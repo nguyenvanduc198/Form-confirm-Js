@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="confirm.js"></script>
+</head>
+<body>
+    <form id="infoForm">
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="phone">Số điện thoại:</label>
+        <input type="tel" id="phone" name="phone">
+        <br>
+        <button type="submit">Xác nhận</button>
+    </form>
+
+    <div id="confirmation" style="display: none;">
+        <h2>Xác nhận thông tin của bạn</h2>
+        <p id="confirmName"></p>
+        <p id="confirmEmail"></p>
+        <p id="confirmPhone"></p>
+        <button onclick="goBack()">Chỉnh sửa</button>
+    </div>
+    
+</body>
+</html>
