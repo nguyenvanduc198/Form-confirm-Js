@@ -26,8 +26,10 @@ image.setAttribute("src", "image2.jpg");
 Khi bạn thực hiện đoạn mã trên, ảnh sẽ thay đổi từ image1.jpg thành image2.jpg.
 
 -----------------
+console.log(document);
 
 var headingNode = document.getElementById('heading');
+
 console.log({
      element: headingNode
 });
